@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <h1>🏫 School Management System</h1>
+        <p>Manage students easily and efficiently</p>
+    </header>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" id="search" placeholder="🔍 Search student..." onkeyup="searchStudent()">
+    </div>
+
+    <!-- Form -->
+    <div class="form">
+
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="text" id="class" placeholder="Class" required>
+        <input type="number" id="marks" placeholder="Marks (out of 100)" min="0" max="100" required>
+
+        <button onclick="addStudent()">➕ Add Student</button>
+
+    </div>
+
+    <!-- Optional Stats Section (Upgrade Feature) -->
+    <div class="stats">
+        <div>Total Students: <span id="totalStudents">0</span></div>
+        <div>Average Marks: <span id="avgMarks">0</span></div>
+    </div>
+
+    <!-- Student List -->
+    <div id="studentList" class="student-list"></div>
+
+</div>
+
+<script src="JS/script.js"></script>
+</body>
+</html>

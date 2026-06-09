@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #0a2540, #1f6f8b);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 42px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Search */
+.search-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-box input {
+    width: 60%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Tools */
+.tools {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f6f8;
+}
+
+.tools-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tool-card {
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Button */
+.tool-card a {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #0a2540;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tool-card a:hover {
+    background: #1f6f8b;
+}
+
+/* Footer */
+.footer {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 12px;
+    color: #cfd8dc;
+}
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cursor improve */
+.card {
+    cursor: pointer;
+}
+
+/* Button hover smooth */
+.tool-card a {
+    transition: 0.3s;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+
+    .search-box input {
+        width: 85%;
+    }
+
+    .category-container,
+    .tools-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .tool-card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+}
+/* =========================
+   MOBILE VIEW (Responsive)
+   ========================= */
+
+@media (max-width: 600px) {
+
+    /* Header */
+    .header {
+        padding: 40px 15px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Search box */
+    .search-box input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    /* Categories */
+    .category-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* Tools */
+    .tools-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tool-card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 8px 0;
+    }
+}
